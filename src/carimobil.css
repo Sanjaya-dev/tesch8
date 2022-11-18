@@ -8,7 +8,7 @@ header{
     padding-top: 0px;
     background-color: #F1F3FF;
 }
-/* navbar */
+
 .contain_navbar{
     margin-right: 0px !important;
     background-color:#F1F3FF;
@@ -69,9 +69,9 @@ nav{
 .btn_order{
     margin-bottom: 64px;
     background-color: #5CB85F !important;
-} */
+}
 
-/* footer */
+
 footer{
     font-family: 'Helvetica';
     font-style: normal;
@@ -99,10 +99,7 @@ footer{
 .sosmed a{
     padding-left: 8px;
 }
-/* end footer */
 
-/* cari mobil */
-    /*form cari mobil*/
     .form_cari_mobil{
         background: #FFFFFF;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
@@ -110,7 +107,7 @@ footer{
         width: 1047px;
         height: 106px;
         margin-left: 120px;
-        /* position: absolute; */
+   
         bottom: 130px;
     }
     .footer_cari_mobil{
@@ -172,7 +169,7 @@ footer{
     .card_3 .button-order{
         margin-top: 0;
     }
-/* mobile 360px */
+
 @media(max-width : 600px) {
     .contain_navbar nav{
         margin-left: 30px;
@@ -199,7 +196,7 @@ footer{
         width: 344px;
         height: 199px;
     }
-    /* layanan */
+
     .layanan .img-service{
         width: 252px;
         margin: 10px 0 0 30px;
