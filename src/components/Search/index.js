@@ -74,7 +74,7 @@ function SearchMobil() {
         <div className="form_cari_mobil">
             <div className="container row">
                 <div className="col-lg-3">
-                    <label for="pilih-driver" className="col-lg-4 col-form-label">Tipe Driver</label>
+                    <label htmlFor="pilih-driver" className="col-lg-4 col-form-label">Tipe Driver</label>
                     <select className="form-select" id="pilih-driver">
                         <option selected>Pilih Tipe Driver</option>
                         <option value="dengan_driver">Dengan Sopir</option>
@@ -82,15 +82,15 @@ function SearchMobil() {
                     </select>
                 </div>
                 <div className="col-lg-3">
-                    <label for="tanggal" class="col-lg-4 col-form-label">Tanggal</label>
-                    <input type="date" class="form-control" placeholder="Pilih Tanggal" id="tanggal"/>
+                    <label htmlFor="tanggal" className="col-lg-4 col-form-label">Tanggal</label>
+                    <input type="date" className="form-control" placeholder="Pilih Tanggal" id="tanggal"/>
                 </div>
                 <div className="col-lg-2">
-                    <label for="waktu" class="col-lg-4 col-form-label">waktu</label>
+                    <label htmlFor="waktu" className="col-lg-4 col-form-label">waktu</label>
                     <input type="time" id="waktu" className="form-control"/>
                 </div>
                 <div className="col-lg-2">
-                    <label for="" className="col-lg-12 col-form-label">Jumlah Penumpang</label>
+                    <label htmlFor="" className="col-lg-12 col-form-label">Jumlah Penumpang</label>
                     <div className="input">
 
                     </div>

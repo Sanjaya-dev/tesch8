@@ -3,26 +3,26 @@ import { useDispatch, useSelector } from "react-redux";
 import { getListMobil } from "../../actions/mobilaction";
 import '../../carimobil.css';
 
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-class filterMobil {
-  static populateCars = (cars) => {
-    return cars.map((car) => {
-      const isPositive = getRandomInt(0, 1) === 1;
-      const timeAt = new Date();
-      const mutator = getRandomInt(1000000, 100000000);
-      const availableAt = new Date(timeAt.getTime() + (isPositive ? mutator : -1 * mutator))
+// function getRandomInt(min, max) {
+//   min = Math.ceil(min);
+//   max = Math.floor(max);
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// class filterMobil {
+//   static populateCars = (cars) => {
+//     return cars.map((car) => {
+//       const isPositive = getRandomInt(0, 1) === 1;
+//       const timeAt = new Date();
+//       const mutator = getRandomInt(1000000, 100000000);
+//       const availableAt = new Date(timeAt.getTime() + (isPositive ? mutator : -1 * mutator))
 
-      return {
-        ...car,
-        availableAt,
-      };
-    })
-  }
-}
+//       return {
+//         ...car,
+//         availableAt,
+//       };
+//     })
+//   }
+// }
 
 function ListMobil() {
   const { getListMobilResult, getListMobilLoading, getListMobilError } =
@@ -38,7 +38,7 @@ function ListMobil() {
       {getListMobilResult ? (
         getListMobilResult.map((mobil) => {
           return (
-            <div className="row list_mobil">
+            <div className="row list_mobil" key={mobil.id}>
               <div className="card col-lg-3 card_1" >
                 {/* <img src="{mobil.image}" alt="" className=""/> */}
                 <p>{mobil.image}</p>
@@ -82,7 +82,7 @@ function ListMobil() {
       ) : getListMobilLoading ? (
         <p>Loading.....</p>
       ) : (
-        <p>{getListMobilError} ? getListMobilError : "Data Kosong"</p>
+        <p>{getListMobilError} ? getListMobilError : &quot;Data Kosong&quot;</p>
       )}
     </div>
   );
