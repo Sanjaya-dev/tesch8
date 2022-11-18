@@ -1,4 +1,4 @@
-
+import React from 'react';
 import '../../style.css';
 
 function LandingPage() {
@@ -6,7 +6,7 @@ function LandingPage() {
         <div>
             <div className="row sticky-top contain_navbar">
                 <nav className="navbar navbar-expand-lg col">
-                    <a className="navbar-brand" href="#"><img src="/Rectangle 74.png" alt='logo'/></a>
+                    <a className="navbar-brand" href="#Why_Us"><img src="/Rectangle 74.png" alt='logo'/></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
                         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -202,12 +202,12 @@ function LandingPage() {
                             data-bs-slide="next">
                             <span className="carousel-control-next-icon" aria-hidden="true"></span>
                         </button>
-                        <div className="button_testimoni">
+                        {/* <div className="button_testimoni">
                             <a type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" class="testimonial-media"><img
                                 src="/Left button.png" alt=""/></a>
                             <a type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" class="testimonial-media"><img
                                 src="/Right button.png" alt=""/></a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="container container_content">
@@ -219,7 +219,7 @@ function LandingPage() {
                                     <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                     </p>
-                                    <a href="#" className="btn text-white btn_order ">Mulai Sewa Mobil</a>
+                                    <a href="#Why_Us" className="btn text-white btn_order ">Mulai Sewa Mobil</a>
                                 </div>
                             </div>
                         </div>
@@ -236,7 +236,7 @@ function LandingPage() {
                             <div className="accordion accordion-flush" id="accordionFlushExample">
                                 <div className="accordion-item">
                                     <h2 className="accordion-header" id="flush-headingOne">
-                                        <button claclassNamess="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                             Apa saja syarat yang di butuhkan?
                                         </button>
@@ -244,7 +244,7 @@ function LandingPage() {
                                     <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                                         data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                                            <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                            <code>.accordion-flush</code> class. This is the first item&apos;s accordion body.</div>
                                     </div>
                                 </div>
                                 <div className="accordion-item">
@@ -257,7 +257,7 @@ function LandingPage() {
                                     <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                                         data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                                            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this
+                                            <code>.accordion-flush</code> class. This is the second item&apos;s accordion body. Let&apos;s imagine this
                                             being filled with some actual content.</div>
                                     </div>
                                 </div>
@@ -271,7 +271,7 @@ function LandingPage() {
                                     <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree"
                                         data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                                            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                                            <code>.accordion-flush</code> class. This is the third item&apos;s accordion body. Nothing more exciting
                                             happening here in terms of content, but just filling up the space to make it look, at least at first
                                             glance, a bit more representative of how this would look in a real-world application.</div>
                                     </div>
@@ -285,8 +285,8 @@ function LandingPage() {
                                     </h2>
                                     <div id="flush-collapseFour" className="accordion-collapse collapse" aria-labelledby="flush-headingFour"
                                         data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                                            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                                        <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                                            <code>.accordion-flush</code> class. This is the third item&apos;s accordion body. Nothing more exciting
                                             happening here in terms of content, but just filling up the space to make it look, at least at first
                                             glance, a bit more representative of how this would look in a real-world application.</div>
                                     </div>
@@ -301,7 +301,7 @@ function LandingPage() {
                                     <div id="flush-collapseFive" className="accordion-collapse collapse" aria-labelledby="flush-headingFive"
                                         data-bs-parent="#accordionFlushExample">
                                         <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-                                            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                                            <code>.accordion-flush</code> class. This is the third item&apos;s accordion body. Nothing more exciting
                                             happening here in terms of content, but just filling up the space to make it look, at least at first
                                             glance, a bit more representative of how this would look in a real-world application.</div>
                                     </div>

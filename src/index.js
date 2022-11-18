@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import {LandingPage,SearchMobil,Login, Protected} from './components';
+import {LandingPage,SearchMobil,Login} from './components';
 import{
   BrowserRouter,
   Routes,
@@ -20,7 +20,7 @@ root.render(
     <Provider store={store}>
       <Routes>
         <Route path="/" element={<LandingPage />}/>
-        <Route path="/search" element={<Protected><SearchMobil /></Protected>}/>
+        <Route path="/search" element={<SearchMobil/>}/>
         <Route path="/login" element={<Login />}/>
       </Routes>
     </Provider>
